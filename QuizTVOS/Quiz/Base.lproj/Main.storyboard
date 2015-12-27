@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Question View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="QuestionViewController" customModule="QuizTVOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ZYa-QG-Tbb" userLabel="Menu StackView">
+                                <rect key="frame" x="20" y="20" width="678" height="86"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MkK-zO-6am">
+                                        <rect key="frame" x="0.0" y="0.0" width="329" height="86"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="Start Question"/>
+                                        <connections>
+                                            <action selector="startQuestionButtonTapped:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="FCk-XA-CvQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ojd-W8-yZj">
+                                        <rect key="frame" x="349" y="0.0" width="329" height="86"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="Add Player"/>
+                                        <connections>
+                                            <action selector="addPlayerButtonTapped:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="g8b-Lj-8H9"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="600" placeholderIntrinsicHeight="400" translatesAutoresizingMaskIntoConstraints="NO" id="9Bh-Ze-Gs5">
+                                <rect key="frame" x="20" y="660" width="600" height="400"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="6yk-PC-gUe"/>
+                                    <constraint firstAttribute="width" constant="600" id="b0e-N3-hQZ"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Searching" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0S8-iR-2wl">
+                                <rect key="frame" x="421" y="140" width="209" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZYa-QG-Tbb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="7gE-ss-Aq4"/>
+                            <constraint firstItem="9Bh-Ze-Gs5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="LOg-8K-13L"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9Bh-Ze-Gs5" secondAttribute="bottom" constant="20" id="O4d-Pw-s8H"/>
+                            <constraint firstItem="ZYa-QG-Tbb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="l5A-3V-vHa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addPlayerButton" destination="Ojd-W8-yZj" id="E3B-ri-mYq"/>
+                        <outlet property="playerStackView" destination="9Bh-Ze-Gs5" id="dqZ-ac-MGd"/>
+                        <outlet property="searchingForPlayersView" destination="0S8-iR-2wl" id="qvZ-1w-Jsd"/>
+                        <outlet property="startQuestionButton" destination="MkK-zO-6am" id="aDQ-TC-3p6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="548" y="360"/>
+        </scene>
+    </scenes>
+</document>

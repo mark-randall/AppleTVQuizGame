@@ -1,0 +1,22 @@
+PODS:
+  - Bond (4.3.0)
+  - DataSources (0.1.0)
+
+DEPENDENCIES:
+  - Bond (~> 4.0)
+  - DataSources (from `https://github.com/mark-randall/DataSources.git`)
+
+EXTERNAL SOURCES:
+  DataSources:
+    :git: https://github.com/mark-randall/DataSources.git
+
+CHECKOUT OPTIONS:
+  DataSources:
+    :commit: 54d01ebc0f37d08aa86af327542827acc9318aee
+    :git: https://github.com/mark-randall/DataSources.git
+
+SPEC CHECKSUMS:
+  Bond: ebe2364b18130690083cbceff036420b21494ae4
+  DataSources: fa4b270e0e1b9e47d5cc8e2a35277fbe6977165f
+
+COCOAPODS: 0.39.0

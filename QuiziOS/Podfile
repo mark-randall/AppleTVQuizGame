@@ -1,0 +1,9 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+use_frameworks!
+
+# UITableView and UICollectionView DataSources
+pod "DataSources", :git => 'https://github.com/mark-randall/DataSources.git'
+
+# FRP Bond
+pod 'Bond', '~> 4.0'

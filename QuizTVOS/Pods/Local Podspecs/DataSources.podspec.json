@@ -1,0 +1,23 @@
+{
+  "name": "DataSources",
+  "version": "0.1.0",
+  "summary": "A short description of DataSources.",
+  "description": "UITableViewDataSource, UICollectionViewDataSource",
+  "homepage": "https://github.com/mark-randall/DataSources",
+  "license": "MIT",
+  "authors": {
+    "mrandall": "mark@markisgood.com"
+  },
+  "source": {
+    "git": "https://github.com/mark-randall/DataSources.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0",
+    "tvos": "9.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/*.swift",
+  "module_name": "DataSources",
+  "frameworks": "CoreData"
+}
